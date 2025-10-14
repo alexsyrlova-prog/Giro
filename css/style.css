@@ -1,0 +1,229 @@
+* {
+    margin: 5px 10px;
+    padding: 0;
+    box-sizing: border-box;     
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Верхняя панель */
+.top-bar {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.top-bar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-text {
+    font-size: 14px;
+    color: #333;
+}
+
+.order-call-btn {
+    background: #FFA019;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Основной header */
+.main-header {
+    padding: 20px 0;
+    background: white;
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.navigation {
+    display: flex;
+    gap: 10px; /*задаёт расстояние (промежуток) между строками и колонками*/
+    color: #333;
+    text-decoration: none;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+/* Герой секция */
+.hero-section {
+    padding: 300px 0;
+    text-align: center;
+    background-image: url('img/background.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-title {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #ddd;
+}
+
+.hero-subtitle {
+    font-size: 18px;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #ddd;
+}
+
+.catalog-btn {
+    background: white;
+    color: black;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Преимущества */
+.advantages-section {
+    padding: 50px 0;
+}
+
+.advantages-section {
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+.advantages-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.advantage {
+    text-align: center;
+}
+
+.advantage-image {
+    width: 120px;
+    height: 100px;
+    margin: 0 auto 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* О нас */
+.about {
+    padding: 50px 0;
+}
+
+.about-section {
+    text-align: left;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.about-content {
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.about-content p {
+    margin-bottom: 20px;
+}
+
+/* Подписка */
+.subscription-section {
+    padding: 60px 0;
+    background: #FFA019;
+    color: white;
+}
+
+.subscription-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+.subscription-form {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 0 auto;
+}
+
+.subscription-form input {
+    padding: 10px;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    border-radius: 5px;
+    flex: 1;/*гибкая модель компоновки блоков*/
+}
+
+.subscription-form input::placeholder {
+    color: white;
+}
+
+.subscribe-btn {
+    background: white;
+    color: #FFA019;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Особенности */
+.features-section {
+    padding: 60px 0;
+    background: white;
+}
+
+.features-columns {
+    display: grid;/*родительский контейнер, который создаёт сетку и делает дочерние элементы её ячейками*/
+    grid-template-columns: repeat(3, 1fr);/**/
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.features-conclusion {
+    text-align: center;
+    font-style: italic;/*задаёт курсивное начертание шрифта*/
+}
+
+/* Cсылки */
+a:hover{
+    color:blueviolet ;
+}
+
+a:visited{
+    color:rgb(203, 177, 228);
+}
